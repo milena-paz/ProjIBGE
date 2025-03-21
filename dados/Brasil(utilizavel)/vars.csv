@@ -1,20 +1,16 @@
-﻿tab 1;Codigo;UF;Municipio;PopTotal;Urbana;Rural;Homem;Mulher;;;;;;;
-tab 2A;Codigo;UF;Municipio;PopTotal;0-5;16-14;15-24;25-39;40-59;60+;;;;;
-tab 3A;Codigo;UF;Municipio;Pop15;Taxa;Pop15-24;Taxa15-24;Pop25-39;Taxa25-39;Pop40-59;Taxa40-59;Pop60+;Taxa60+;;
-tab 4;Codigo;UF;Municipio;Total;1Resp;MaisResp;TotalMasc;1RespMasc;MaisRespMasc;TotalFem;1RespFem;MaisRespFem;;;
-tab 5;Codigo;UF;Municipio;Total;1Resp;MaisResp;TotalCasal;1RespCasal;MaisRespCasal;TotalFamilia;1RespFamilia;MaisRespFamilia;TotalOutros;1RespOutros;MaisRespOutros
-tab 6A;Codigo;UF;Municipio;Total;Unipessoa;TotalNuclear;CasalSFilhos;CasalCFilhos;HomemCFilhos;MulherCFilhos;;;;;
-tab 6B;Codigo;UF;Municipio;TotalFamEstendida;CasalSFilhos;CasalCFilhos;HomemCFilhos;MulherCFilhos;Outros;;;;;;
-tab 6C;Codigo;UF;Municipio;TotalComposta;CasalSFilhos;CasalCFilhos;HomemCFilhos;MulherCFilhos;Outros;;;;;;
-tab 7A;Codigo;UF;Municipio;Total;Adequado;Semi-Adequado;Inadequado;;;;;;;;
-tab 8A;Codigo;UF;Municipio;ValMedio;Q2;Mediana;Q3;;;;;;;;
-tab 9;Codigo;UF;Municipio;MediaHomens;MediaMulheres;MedianaHomens;MedianaMulheres;mediaH/M;medianaH/M;;;;;;
-tab 10;Codigo;UF;Municipio;Branca;Preta;Parda;Amarela;Indigena;;;;;;;
-tab 11;Codigo;UF;Municipio;Br/Pr;Br/Pa;Br/Am;Br/In;Pr/Pa;;;;;;;
-tab 12;Codigo;UF;Municipio;Total;Ate70R$;Ate1/4;Ate1/2;Ate60%;;;;;;;
-tab 13;Codigo;UF;Municipio;Total;Ate70R$;Ate1/4;Ate1/2;Ate60%;;;;;;;
-tab 14;Codigo;UF;Municipio;Total_2000;Total_2010;15-24_2000;15-24_2010;25-59_2000;25-59_2010;60+_2000;60+_2010;;;;
-tab 15;Codigo;UF;Municipio;Adequado_2000;Adequado_2010;Semi_2000;Semi_2010;Inadequado_2000;Inadequado_2010;;;;;;
-tab 16;Codigo;UF;Municipio;Analf_2000;Analf_2010;Inadequado_2000;Inadequado_2010;AnalfEInadequado_2000;AnalfEInadequado_2010;;;;;;
-tab 17;Codigo;UF;Municipio;Total;Taxa;;;;;;;;;;
-tab 18;Codigo;UF;Municipio;Taxa10;Taxa15;;;;;;;;;;
+﻿tab 1;tab 2A;tab 3A;tab 4;tab 5;tab 6A;tab 6B;tab 6C;tab 7A;tab 8A;tab 9;tab 10;tab 11;tab 12;tab 13;tab 14;tab 15;tab 16;tab 17;tab 18
+Codigo;Codigo;Codigo;Codigo;Codigo;Codigo;Codigo;Codigo;Codigo;Codigo;Codigo;Codigo;Codigo;Codigo;Codigo;Codigo;Codigo;Codigo;Codigo;Codigo
+UF;UF;UF;UF;UF;UF;UF;UF;UF;UF;UF;UF;UF;UF;UF;UF;UF;UF;UF;UF
+Municipio;Municipio;Municipio;Municipio;Municipio;Municipio;Municipio;Municipio;Municipio;Municipio;Municipio;Municipio;Municipio;Municipio;Municipio;Municipio;Municipio;Municipio;Municipio;Municipio
+PopTotal;PopTotal;Pop15;Total;Total;Total;TotalFamEstendida;TotalComposta;Total;ValMedio;MediaHomens;Branca;Br/Pr;Total;Total;Total_2000;Adequado_2000;Analf_2000;Total;Taxa10
+Urbana;0-5;Taxa;1Resp;1Resp;Unipessoa;EstCasalSFilhos;CompCasalSFilhos;Adequado;Q2;MediaMulheres;Preta;Br/Pa;Ate70R$;Ate70R$;Total_2010;Adequado_2010;Analf_2010;Taxa;Taxa15
+Rural;16-14;Pop15-24;MaisResp;MaisResp;TotalNuclear;EstCasalCFilhos;CompCasalCFilhos;Semi-Adequado;Mediana;MedianaHomens;Parda;Br/Am;Ate1/4;Ate1/4;15-24_2000;Semi_2000;Inadequado_2000;;
+Homem;15-24;Taxa15-24;TotalMasc;TotalCasal;CasalSFilhos;EstHomemCFilhos;CompHomemCFilhos;Inadequado;Q3;MedianaMulheres;Amarela;Br/In;Ate1/2;Ate1/2;15-24_2010;Semi_2010;Inadequado_2010;;
+Mulher;25-39;Pop25-39;1RespMasc;1RespCasal;CasalCFilhos;EstMulherCFilhos;CompMulherCFilhos;;;mediaH/M;Indigena;Pr/Pa;Ate60%;Ate60%;25-59_2000;Inadequado_2000;AnalfEInadequado_2000;;
+H/M;40-59;Taxa25-39;MaisRespMasc;MaisRespCasal;HomemCFilhos;EstOutros;CompOutros;;;medianaH/M;;;;;25-59_2010;Inadequado_2010;AnalfEInadequado_2010;;
+;60+;Pop40-59;TotalFem;TotalFamilia;MulherCFilhos;;;;;;;;;;60+_2000;;;;
+;;Taxa40-59;1RespFem;1RespFamilia;;;;;;;;;;;60+_2010;;;;
+;;Pop60+;MaisRespFem;MaisRespFamilia;;;;;;;;;;;;;;;
+;;Taxa60+;;TotalOutros;;;;;;;;;;;;;;;
+;;;;1RespOutros;;;;;;;;;;;;;;;
+;;;;MaisRespOutros;;;;;;;;;;;;;;;
