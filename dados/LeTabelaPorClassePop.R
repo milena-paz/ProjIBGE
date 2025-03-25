@@ -10,7 +10,7 @@ nlinhas[7]<-5582-5544
 classes<-c("Até 5 mil","De 5 a 10 mil","De 10 a 20 mil","De 20 a 50 mil",
            "De 50 a 100 mil","De 100 a 500 mil","Acima de 500 mil")
 
-nomes<- read.csv("dados/Brasil(utilizavel)/vars.csv",sep=";",na="")
+nomes<- read.csv("dados/Brasil(csv)/vars.csv",sep=";",na="")
 
 of<- c(10,11,14,12,12,10,10,10,12,12,11,9,9,11,11,11,11,11,10)
 colu<-c(9,10,13,12,15,10,9,9,7,7,9,8,8,8,8,11,9,9,5)
@@ -64,7 +64,7 @@ Tab6$B <- subset(Tab6$B,select=-c(1,2,3,10))
 Tab6$C <- subset(Tab6$C,select=-c(1,2,3,10))
 TodasTabs$Tab6 <- with(Tab6,cbind(A,B,C))
 
-#### TABELAS 8 A 18 ----
+#### TABELAS 8 A 17 ----
 for(i in 7:17){
   TodasTabs[[paste0("Tab",i)]] <- organizaTabela(of[i+2],i,colu[i+2])
 }
@@ -74,4 +74,4 @@ for(i in 7:17){
   colnames(TodasTabs[[paste0("Tab",i)]])<- c(nom,"Classe")
 }
 #### EXPORTANDO TABELAS ----
-for(i in 1:17) write.csv2(TodasTabs[[i]],file=paste0("dados/Brasil(utilizavel)/tab",i,".csv"),row.names=F)
+for(i in 1:17) write.csv2(TodasTabs[[i]],file=paste0("dados/Brasil(csv)/tab",i,".csv"),row.names=F)
