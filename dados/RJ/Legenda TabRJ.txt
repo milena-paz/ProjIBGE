@@ -1,0 +1,53 @@
+Codigo - Codigo do municipio
+UF - Sigla da unidade de federação
+Municipio - Nome do municipio
+PopTotal - População residente total
+Urbana - População residente em situação urbana (%)
+Rural - População residente em situação rural (%)
+Homem - População residente do sexo masculino (%)
+Mulher - População residente do sexo feminino (%)
+H.M - Razão de sexo (Homem/Mulher)
+Classe - Classe de tamanho populacional do município
+Pop15 - População que não sabe ler ou escrever (15 anos ou mais)
+Taxa - Taxa de analfabetismo (15 anos ou mais)
+Pop15.24 - População que não sabe ler ou escrever (entre 15 e 24 anos)
+Taxa15.24 - Taxa de analfabetismo (entre 15 e 24 anos)
+Pop25.39 - População que não sabe ler ou escrever (entre 25 e 39 anos)
+Taxa15.24 - Taxa de analfabetismo (entre 25 e 39 anos)
+Pop15.24 - População que não sabe ler ou escrever (entre 40 e 59 anos)
+Taxa15.24 - Taxa de analfabetismo (entre 40 e 59 anos)
+Pop60. - População que não sabe ler ou escrever (60 anos ou mais)
+Taxa60. - Taxa de analfabetismo (60 anos ou mais)
+TotalDormPartPerm - Número total de domicílios particulares permanentes(DPP)
+Adequado - DPP com saneamento adequado
+Semi.Adequado - DPP com saneamento semiadequado
+Inadequado - DPP com saneamento inadequado
+ValMedio - Valor médio do rendimento mensal total domiciliar per capita nominal
+Q2 - Segundo Quartil do rendimento mensal total domiciliar per capita nominal
+Mediana - Mediana do rendimento mensal total domiciliar per capita nominal
+Q3 - Terceiro quartil do rendimento mensal total domiciliar per capita nominal
+MediaHomens - Media do rendimento mensal total nominal de pessoas do sexo masculino
+MediaMulheres - Media do rendimento mensal total nominal de pessoas do sexo feminino
+MedianaHomens - Mediana do rendimento mensal total nominal de pessoas do sexo masculino
+MedianaMulheres - Mediana do rendimento mensal total nominal de pessoas do sexo feminino
+mediaH.M - Razão entre valor médio do rendimento mensal total nominal de homens e mulheres
+medianaH.M - Razão entre valor mediano do rendimento mensal total nominal de homens e mulheres
+Branca - Valor médio do rendimento mensal total nominal de pessoas residentes em DPP (brancas)
+Preta - Valor médio do rendimento mensal total nominal de pessoas residentes em DPP (Pretas)
+Parda - Valor médio do rendimento mensal total nominal de pessoas residentes em DPP (Pardas)
+Amarela - Valor médio do rendimento mensal total nominal de pessoas residentes em DPP (Amarelas)
+Indigena - Valor médio do rendimento mensal total nominal de pessoas residentes em DPP (Indígenas)
+TotalIndq - Total da população residente em DPP com saneamento inadequado
+Ate70R.Indq - Pessoas residentes em DPP com rendimento mensal total domiciliar per capita de até 70 Reais
+Ate1.4Indq - Pessoas residentes em DPP com rendimento mensal total domiciliar per capita de até 1/4 de salário mínimo*
+Ate1.2Indq - Pessoas residentes em DPP com rendimento mensal total domiciliar per capita de até 1/2 de salário mínimo*
+Ate60.Indq - Pessoas residentes em DPP com rendimento mensal total domiciliar per capita de até 60% da mediana**
+Total10 - Pessoas de 10 anos de idade que não sabem ler ou escrever
+Taxa10 - Taxa de analfabetismo de pessoas de 10 anos
+Microrregiao - Microrregião do município
+Mesorregiao - Mesorregião do município
+RGI - Região geográfica imediata do município
+RGInt - Região geográfica intermediária do município
+
+* Salário mínimo da época: R$510,00
+** = R$225,00
