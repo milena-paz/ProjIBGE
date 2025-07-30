@@ -12,8 +12,8 @@ classes<-c("Até 5 mil","De 5 a 10 mil","De 10 a 20 mil","De 20 a 50 mil",
 
 nomes<- read.csv("dados/Brasil(csv)/vars.csv",sep=";",na="")
 
-of<- c(10,11,14,12,12,10,10,10,12,12,11,9,9,11,11,11,11,11,10)
-colu<-c(9,10,13,12,15,10,9,9,7,7,9,8,8,8,8,11,9,9,5)
+of<- c(10,11,14,12,12,10,10,10,12,12,11,9,9,11,11,11,11,11,10) #offset
+colu<-c(9,10,13,12,15,10,9,9,7,7,9,8,8,8,8,11,9,9,5) #numero de colunas
 
 #FUNCAO DE LER TABELA
 leTabela<-function(offset,n,uCol,sheet=1){

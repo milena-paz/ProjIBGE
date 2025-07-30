@@ -1,5 +1,5 @@
 ---
-title: "Tabela 1: Rendimento domiciliar per capita, agregado por Mesorregiões"
+title: "Tabela 3: Domicílios com saneamento inadequado e classe populacional, agregados por Mesorregiões"
 format: pdf
 editor: visual
 ---
@@ -11,20 +11,21 @@ suppressMessages({
 )
 cor <- "#E3E3E3"
 niveis<- c('Baixadas', 'Centro', 'Metropolitana', 'Noroeste', 'Norte', 'Sul')
-nomes<- c("Município","Renda Média", "1º Quartil",
-                  "Mediana","3º quartil")
+nomes<- c("Município","Saneamento\nInadequado(\\%)","Classe Populacional\n(número de habitantes)")
 tabela <- read.csv2("D:/Documentos (D)/UFJF/6-PERIODO/TCCI/DADOS IBGE/ProjIBGE/dados/RJ/TabRJ.csv")
 tabela$Classe <- as.factor(tabela$Classe)
 tabela$Microrregiao <-as.factor(tabela$Microrregiao)
 tabela$Mesorregiao <-as.factor(tabela$Mesorregiao)
 levels(tabela$Mesorregiao) <- niveis
-
+levels(tabela$Classe) <- c(">500 mil","[10 mil, 20 mil)",
+        "[100 mil, 500 mil)", "[20 mil, 50 mil)","[5 mil, 10 mil)",
+        "[50 mil, 100 mil)")
 #tab <- subset(tabela, subset=Mesorregiao=="Baixadas", select= c("Municipio","ValMedio","Q2","Mediana","Q3"))
 tabs <- list()
 for(reg in niveis){
   tabs[[paste0("tab",reg)]] <- subset(tabela,
               subset=Mesorregiao==reg,
-              select= c("Municipio","ValMedio","Q2","Mediana","Q3"))
+              select= c("Municipio","Inadequado","Classe"))
   rownames(tabs[[paste0("tab",reg)]]) <- NULL
 }
 ```
@@ -32,18 +33,19 @@ for(reg in niveis){
 # Baixadas Litorâneas
 
 ```{r,echo=FALSE}
-kbl(tabs$tabBaixadas,format="latex",row.names=NA,
-      col.names=nomes,booktabs=T) %>% 
-  kable_styling(full_width = F,
-                latex_options=c("hold_position","striped"),
-                stripe_color=cor)
+
+kbl(tabs$tabBaixadas,format="latex",escape=F,longtable=T,row.names=NA,
+      col.names=linebreak(nomes),booktabs=T) %>% 
+  kable_styling(full_width = F,                                         latex_options=c("hold_position","striped","repeat_header"),
+                stripe_color=cor,
+                repeat_header_text = "\\textit{(continuada)}")
 ```
 
 # Centro Fluminense
 
 ```{r,echo=FALSE}
-kbl(tabs$tabCentro,format="latex",longtable=T,row.names=NA,
-      col.names=nomes,booktabs=T) %>% 
+kbl(tabs$tabCentro,format="latex",escape=F,longtable=T,row.names=NA,
+      col.names=linebreak(nomes),booktabs=T) %>% 
   kable_styling(full_width = F,                                         latex_options=c("hold_position","striped","repeat_header"),
                 stripe_color=cor,
                 repeat_header_text = "\\textit{(continuada)}")
@@ -52,8 +54,8 @@ kbl(tabs$tabCentro,format="latex",longtable=T,row.names=NA,
 # Metropolitana do Rio de Janeiro
 
 ```{r,echo=FALSE}
-kbl(tabs$tabMetropolitana,format="latex",longtable=T,row.names=NA,
-      col.names=nomes,booktabs=T) %>% 
+kbl(tabs$tabMetropolitana,format="latex",escape=F,longtable=T,row.names=NA,
+      col.names=linebreak(nomes),booktabs=T) %>%
   kable_styling(full_width = F,                                         latex_options=c("hold_position","striped","repeat_header"),
                 stripe_color=cor,
                 repeat_header_text = "\\textit{(continuada)}")
@@ -62,18 +64,20 @@ kbl(tabs$tabMetropolitana,format="latex",longtable=T,row.names=NA,
 # Noroeste Fluminense
 
 ```{r,echo=FALSE}
-kbl(tabs$tabNoroeste,format="latex",longtable=T,row.names=NA,
-      col.names=nomes,booktabs=T) %>% 
+kbl(tabs$tabNoroeste,format="latex",escape=F,longtable=T,row.names=NA,
+      col.names=linebreak(nomes),booktabs=T) %>%
   kable_styling(full_width = F,                                         latex_options=c("hold_position","striped","repeat_header"),
                 stripe_color=cor,
                 repeat_header_text = "\\textit{(continuada)}")
 ```
 
-# Norte Fluminse
+\vspace{0.5in}
+
+# Norte Fluminense
 
 ```{r,echo=FALSE}
-kbl(tabs$tabNorte,format="latex",longtable=T,row.names=NA,
-      col.names=nomes,booktabs=T) %>% 
+kbl(tabs$tabNorte,format="latex",escape=F,longtable=T,row.names=NA,
+      col.names=linebreak(nomes),booktabs=T) %>% 
   kable_styling(full_width = F,                                         latex_options=c("hold_position","striped","repeat_header"),
                 stripe_color=cor,
                 repeat_header_text = "\\textit{(continuada)}")
@@ -82,8 +86,8 @@ kbl(tabs$tabNorte,format="latex",longtable=T,row.names=NA,
 # Sul Fluminense
 
 ```{r,echo=FALSE}
-kbl(tabs$tabSul,format="latex",longtable=T,row.names=NA,
-      col.names=nomes,booktabs=T) %>% 
+kbl(tabs$tabSul,format="latex",escape=F,longtable=T,row.names=NA,
+      col.names=linebreak(nomes),booktabs=T) %>% 
   kable_styling(full_width = F,                                         latex_options=c("hold_position","striped","repeat_header"),
                 stripe_color=cor,
                 repeat_header_text = "\\textit{(continuada)}")
