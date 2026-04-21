@@ -1,5 +1,5 @@
 ---
-title: "Tabela 1: Rendimento domiciliar per capita, agregado por Mesorregiões"
+title: "Tabela 1: Rendimento domiciliar per capita nos municípios das mesorregiões do estado do Rio de Janeiro"
 format: pdf
 editor: visual
 ---

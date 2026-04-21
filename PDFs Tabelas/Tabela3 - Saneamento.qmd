@@ -1,5 +1,5 @@
 ---
-title: "Tabela 3: Domicílios com saneamento inadequado e classe populacional, agregados por Mesorregiões"
+title: "Tabela 3: Domicílios com saneamento inadequado e classe populacional nos municípios do estado do Rio de Janeiro"
 format: pdf
 editor: visual
 ---

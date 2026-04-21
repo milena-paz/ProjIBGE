@@ -1,5 +1,5 @@
 ---
-title: "Tabela 2: Rendimento em reais médio e mediano por sexo, agregados por Mesorregiões"
+title: "Tabela 2: Rendimento em reais médio e mediano por sexo nos municípios do estado do Rio de Janeiro"
 format: pdf
 editor: visual
 ---
